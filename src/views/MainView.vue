@@ -9,10 +9,10 @@
       </div>
       <figure class="relative">
         <img
-          src="src/assets/images/pizza.png"
+          src="/assets/images/pizza.png"
           class="absolute bottom-4 right-6"
         />
-        <img src="src/assets/images/mesa.png" alt="" srcset="" />
+        <img src="/assets/images/mesa.png" alt="" srcset="" />
       </figure>
     </span>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -66,7 +66,7 @@
           "
           :id="pizza.id"
         >
-          <img src="src\assets\icons\ShoppingCartIcon.svg" class="w-5" /> Añadir
+          <img src="\assets\icons\ShoppingCartIcon.svg" class="w-5" /> Añadir
           al carrito
         </button>
       </div>
@@ -97,7 +97,7 @@ function saveCookie(object) {
 .main__container {
   width: 100%;
   height: calc(100vh - 4rem);
-  background-image: url("src/assets/images/backgroundBanner.png");
+  background-image: url("/assets/images/backgroundBanner.png");
   position: relative;
 }
 .main__container svg {

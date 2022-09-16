@@ -37,12 +37,12 @@
           <a href="inicio" class="flex-shrink-0 flex items-center">
             <img
               class="block lg:hidden h-8 w-auto"
-              src="src\assets\logo.svg"
+              src="/assets/images/logo.svg"
               alt="Workflow"
             />
             <img
               class="hidden lg:block h-8 w-auto"
-              src="src\assets\logo.svg"
+              src="/assets/images/logo.svg"
               alt="Workflow"
             />
           </a>
@@ -95,7 +95,7 @@
               flex-col
               relative
             "
-            ><img src="src/assets/icons/LogInIcon.svg" class="w-8" />Ingresar</a
+            ><img src="/assets/icons/LogInIcon.svg" class="w-8" />Ingresar</a
           >
           <a
             @click="registerModal = true"
@@ -304,14 +304,14 @@ const navigation = [
   {
     name: "Inicio",
     href: "/inicio",
-    icon: "src/assets/icons/HomeIcon.svg",
+    icon: "/assets/icons/HomeIcon.svg",
     current: false,
     breadcrumbs: "",
   },
   {
     name: "Carrito",
     href: "/carrito",
-    icon: "src/assets/icons/ShoppingCartIcon.svg",
+    icon: "/assets/icons/ShoppingCartIcon.svg",
     current: true,
     breadcrumbs:
       "inline-flex absolute top-0 right-0 justify-center items-center w-6 h-6 text-xs font-bold text-white bg-red-500 rounded-full border-2 border-white dark:border-gray-900",

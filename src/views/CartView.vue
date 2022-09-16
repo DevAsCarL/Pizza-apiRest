@@ -35,7 +35,7 @@
             </svg>
           </div>
           <span class="text-center w-1/5 font-semibold text-sm">S/.{{pizza.price}}</span>
-          <span class="text-center w-1/5 font-semibold text-sm">S/.{{totalPrice(pizza.id)}}</span>
+          <span class="text-center w-1/5 font-semibold text-sm">S/.{{new Decimal(pizza.quantity).mul(pizza.price)}}</span>
         </div>
 
         <RouterLink to="/inicio" class="flex font-semibold text-indigo-600 text-sm mt-10">
@@ -86,9 +86,10 @@ const pizzas = computed(()=>store.state.basket)
 const counter = computed(()=>store.state.count)
 const total = computed(()=>store.state.total)
 const shipping = new Decimal(10)
+
 function totalPrice(id) { 
 store.commit('totalPrice',id)
-const totalPrice = computed(()=>store.state.totalPrice)
+let totalPrice = computed(()=>store.state.totalPrice)
 return totalPrice.value
 }
 

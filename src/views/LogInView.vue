@@ -24,7 +24,7 @@
           dark:text-white
         "
       >
-        <img class="w-8 h-8 mr-2" src="src\assets\logo.svg" alt="logo" />
+        <img class="w-8 h-8 mr-2" src="/assets/images/logo.svg" alt="logo" />
         Pizzap
       </a>
       <div

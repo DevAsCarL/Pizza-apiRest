@@ -7,7 +7,7 @@ import { useCookies } from "vue3-cookies";
 import { Decimal } from "decimal.js";
 const { cookies } = useCookies();
 import axios from "axios";
-axios.defaults.baseURL = "http://pizza-api.local/api/";
+axios.defaults.baseURL = "https://larapizza-api.herokuapp.com/api/";
 // Create a new store instance.
 const store = createStore({
   state() {
